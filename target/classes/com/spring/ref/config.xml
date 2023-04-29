@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean name="ad" class="com.spring.ref.Address" p:id="100" p:city="pune">
+	
+		<!-- <property name="id" value="100"></property>
+		<property name="city" value="pune"></property> -->
+
+	</bean>
+
+	<bean name="st" class="com.spring.ref.Student" p:name="shashi" p:address-ref="ad">
+	<!-- 
+		<property name="name" value="shashi"></property>
+		<property name="address" ref="ad"></property> -->
+		
+	</bean>
+
+</beans>
